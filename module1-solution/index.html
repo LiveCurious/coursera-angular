@@ -2,24 +2,27 @@
 <html ng-app="LunchCheck">
 <head>
   <meta charset="utf-8">
-
-    <script src="angular.min.js"/>
-      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/X.Y.Z/angular-route.js"></script>
-    <script src="app.js"/>
+  <link rel="stylesheet" href="bootstrap.min.css">
+     <style>
+       .message { font-size: 1.3em; font-weight: bold; }
+     </style>
 </head>
 <body>
   <main>
-    <H1>Hello Coursera</H1>
+    <h1>Lunch Checker</h1>
+
+
     <div ng-controller="LunchController">
    <input ng-model="value" type="text">
-    <button ng-click="Check()"> press me </button>
+    <button ng-click="Check()">Check If Too Much</button>
 
-
-    <div>
+  <div class="message">
     Results: {{result}}
     </div>
     </div>
   </main>
-
+  <script src="angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-route.js"></script>
+  <script src="app.js"> </script>
 </body>
 </html>

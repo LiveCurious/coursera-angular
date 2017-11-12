@@ -19,9 +19,9 @@ $scope.result = "";
             var array  =  $scope.value.split(',');
                 if(array.length >3)
                 {
-                  result = "Too much";}
+                  result = "Too much!";}
                 else {
-                  result= "We are good";
+                  result= "Enjoy!";
                 }
     $scope.result= result;
     }
